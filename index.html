@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/main.css">
+  
+  <title>Interactive pricing component</title>
+
+</head>
+<body>
+    <section class="main-container">
+      <div class="cta-container">
+        <h1>Simple, traffic-based pricing</h1>
+        <p class="cta-txt">Sign-up for our 30-day trial.<br> No credit card required. </p>
+      </div>
+
+      <div class="card-container">
+        <h2 class="card-container--title">100K PAGEVIEWS</h2>
+
+        <div class="drag-container">
+          <div class="drag-container__bar"></div>
+          <input class="slider" type="range" min="0" max="4" name="myRange" id="myRange">
+          <div id='drag-item' class="drag-container__circle" draggable="true">
+            
+          </div>
+        </div>
+
+        <div class="price-container">
+          <p class="price-container__text">$16.00 <span class="price-container__text--grey">/ month</span></p>
+        </div>
+
+        <div class="billing-container">
+          <label for="billing" class="billing-container--label">Monthly Billing</label>
+          <input type="text" class="billing">
+          <div class="white-ball"></div>
+
+          <p class="yearly-billing">Yearly Billing</p>
+          <div class="porcent">
+            <p class="porcent-number">-25%</p>
+          </div>
+        </div>
+
+        <div class="trial-container">
+          <div class="benefits-container">
+            <div class="benefits">
+              <img src="images/icon-check.svg" alt="">
+              <p class="benefits-txt">Unlimited websites</p>
+            </div>
+            <div class="benefits">
+              <img src="images/icon-check.svg" alt="">
+              <p class="benefits-txt">100% data ownership</p>
+            </div>
+            <div class="benefits">
+              <img src="images/icon-check.svg" alt="">
+              <p class="benefits-txt">Email reports</p>
+            </div>
+          </div>
+
+          <input class="boton" type="button" value="Start my trial">
+        </div>
+      </div>
+    </section>
+    
+</body>
+</html>

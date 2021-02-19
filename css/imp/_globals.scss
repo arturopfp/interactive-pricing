@@ -1,0 +1,13 @@
+@import 'variables';
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: $mobile;
+    height: 812px;
+    font-family: $manrope;
+}

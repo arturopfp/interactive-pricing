@@ -1,0 +1,294 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 375px;
+  height: 812px;
+  font-family: "Manrope", sans-serif;
+}
+
+.main-container {
+  background-image: url("../images/bg-pattern.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-container .cta-container {
+  width: 326px;
+  height: 145px;
+  margin-top: 57px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../images/pattern-circles.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-container .cta-container h1 {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  margin-top: 32px;
+  color: #293356;
+}
+
+.main-container .cta-container .cta-txt {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 23px;
+  height: 46px;
+  margin-top: 8px;
+  text-align: center;
+  color: #848EAD;
+}
+
+.main-container .card-container {
+  background-color: white;
+  border: 1px solid #ECF0FB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 32px auto 0px auto;
+  width: 327px;
+  height: 478px;
+}
+
+.main-container .card-container .card-container--title {
+  height: 16px;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 1.71429px;
+  text-transform: uppercase;
+  color: #848EAD;
+  margin-top: 34px;
+}
+
+.main-container .card-container .drag-container {
+  width: 279px;
+  height: 40px;
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid red;
+}
+
+.main-container .card-container .drag-container .drag-container__bar {
+  width: 100%;
+  height: 8px;
+  background-color: #a5f3eb;
+}
+
+.main-container .card-container .drag-container .drag-container__circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 168px;
+  top: 309px;
+  background: #10D8C4;
+  -webkit-box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+          box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+  background-image: url("../images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-container .card-container .drag-container .drag-container__circle:hover {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.main-container .card-container .drag-container .hide {
+  display: none;
+}
+
+.main-container .card-container .price-container {
+  width: 167px;
+  height: 44px;
+  margin-top: 24px;
+}
+
+.main-container .card-container .price-container .price-container__text {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: right;
+  letter-spacing: -0.8px;
+  color: #293356;
+}
+
+.main-container .card-container .price-container .price-container__text--grey {
+  display: inline-block;
+  position: relative;
+  bottom: 5px;
+  width: 53px;
+  height: 19px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #848EAD;
+}
+
+.main-container .card-container .billing-container {
+  width: 272px;
+  height: 22px;
+  margin-top: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .card-container .billing-container .billing-container--label {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #848EAD;
+}
+
+.main-container .card-container .billing-container .billing {
+  width: 43px;
+  height: 22px;
+  background: #CFD8EF;
+  border-radius: 15px;
+  border: none;
+  margin-left: 12px;
+}
+
+.main-container .card-container .billing-container .white-ball {
+  position: relative;
+  top: 0px;
+  right: 37px;
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.main-container .card-container .billing-container .yearly-billing {
+  width: 72px;
+  height: 16px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #848EAD;
+}
+
+.main-container .card-container .billing-container .porcent {
+  width: 41px;
+  height: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 5.5px;
+  background: #FEEDE8;
+  border-radius: 9.5px;
+}
+
+.main-container .card-container .billing-container .porcent .porcent-number {
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  color: #FF8D68;
+}
+
+.main-container .card-container .trial-container {
+  height: 200px;
+  width: 100%;
+  margin-top: 38px;
+  border-top: 1px solid #ECF0FB;
+}
+
+.main-container .card-container .trial-container .benefits-container {
+  width: 169px;
+  height: 71px;
+  margin-top: 24px;
+  margin-left: 77px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-container .card-container .trial-container .benefits-container .benefits {
+  width: 100%;
+  height: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.main-container .card-container .trial-container .benefits-container .benefits .benefits-txt {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #848EAD;
+}
+
+.main-container .card-container .trial-container .boton {
+  background-color: #293356;
+  border-radius: 20.5px;
+  width: 170px;
+  height: 41px;
+  margin-left: 77px;
+  margin-top: 32px;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #BECDFF;
+}
+/*# sourceMappingURL=main.css.map */

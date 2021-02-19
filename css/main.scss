@@ -1,0 +1,301 @@
+@import 'imp/_variables';
+@import 'imp/_globals';
+
+.main-container {
+    background-image: url('../images/bg-pattern.svg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    .cta-container {
+        width: 326px;
+        height: 145px;
+
+        margin-top: 57px;
+        margin-left: auto;
+        margin-right: auto;
+
+        background-image: url('../images/pattern-circles.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+
+        h1 {
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 27px;
+            text-align: center;
+
+            margin-top: 32px;
+
+            color: #293356;
+        }
+
+        .cta-txt {
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 23px;
+
+            height: 46px;
+
+            margin-top: 8px;
+
+            text-align: center;
+
+            color: #848EAD;
+        }
+    }
+
+    .card-container {
+        background-color: white;
+
+        border: 1px solid #ECF0FB;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+
+        margin: 32px auto 0px auto;
+        
+
+        width: 327px;
+        height: 478px;
+
+        .card-container--title {
+            height: 16px;
+
+            font-weight: 800;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            letter-spacing: 1.71429px;
+            text-transform: uppercase;
+
+            color: #848EAD;
+
+            margin-top: 34px;
+        }
+
+        .drag-container {
+            width: 279px;
+            height: 40px;
+
+            margin-top: 25px;
+
+            display: flex;
+            align-items: center;
+
+            border: 1px solid red;
+
+            .drag-container__bar {
+                width: 100%;
+                height: 8px;
+
+                background-color: $softCyan;
+            }
+
+            .drag-container__circle {
+                width: 40px;
+                height: 40px;
+
+                border-radius: 50%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                position: absolute;
+                left: 168px;
+                top: 309px;
+
+                background: #10D8C4;
+                box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+                background-image: url('../images/icon-slider.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .drag-container__circle:hover {
+                cursor: grab;
+            }
+
+            .hide {
+                display: none;
+            }
+        }
+
+        .price-container {
+            width: 167px;
+            height: 44px;
+
+            margin-top: 24px;
+
+            .price-container__text {
+                font-weight: 800;
+                font-size: 32px;
+                line-height: 44px;
+
+                text-align: right;
+                letter-spacing: -0.8px;
+
+                color: #293356;
+            }
+
+            .price-container__text--grey {
+                display: inline-block;
+
+                position: relative;
+                bottom: 5px;
+
+                width: 53px;
+                height: 19px;
+
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                text-align: center;
+
+                color: #848EAD;
+            }
+        }
+
+        .billing-container {
+            width: 272px;
+            height: 22px;
+
+            margin-top: 34px;
+
+            display: flex;
+            align-items: center;
+
+            .billing-container--label {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 16px;
+                text-align: center;
+
+                color: #848EAD;
+            }
+
+            .billing {
+                width: 43px;
+                height: 22px;
+
+                background: #CFD8EF;
+                border-radius: 15px;
+
+                border: none;
+
+                margin-left: 12px;
+            }
+
+            .white-ball {
+                position: relative;
+                top: 0px;
+                right: 37px;
+
+                width: 14px;
+                height: 14px;
+                background-color: white;
+
+                border-radius: 25px;
+            }
+
+            .yearly-billing {
+                width: 72px;
+                height: 16px;
+
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 16px;
+                text-align: center;
+
+                color: #848EAD;
+            }
+
+            .porcent {
+                width: 41px;
+                height: 19px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                margin-left: 5.5px;
+
+                background: #FEEDE8;
+                border-radius: 9.5px;
+
+                .porcent-number {
+                    font-weight: 800;
+                    font-size: 10px;
+                    line-height: 14px;
+    
+                    text-align: center;
+    
+                    color: #FF8D68;
+                }
+            }
+        }
+
+        .trial-container {
+            height: 200px;
+            width: 100%;
+
+            margin-top: 38px;
+
+            border-top: 1px solid #ECF0FB;
+
+            .benefits-container {
+                width: 169px;
+                height: 71px;
+
+                margin-top: 24px;
+                margin-left: 77px;
+
+                display: flex;
+                flex-direction: column;
+
+                .benefits {
+                    width: 100%;
+                    height: 17px;
+
+                    display: flex;
+                    justify-content: space-around;
+
+                    margin-bottom: 10px;
+
+                    .benefits-txt {
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 16px;
+
+                        color: #848EAD;
+                    }
+                }
+            }
+
+            .boton {
+                background-color: #293356;
+                border-radius: 20.5px;
+
+                width: 170px;
+                height: 41px;
+
+                margin-left: 77px;
+                margin-top: 32px;
+
+                font-weight: 800;
+                font-size: 12px;
+                line-height: 16px;
+                text-align: center;
+
+                color: #BECDFF;
+            }
+        }
+    }
+}
