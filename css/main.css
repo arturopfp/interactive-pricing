@@ -95,40 +95,49 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid red;
-}
-
-.main-container .card-container .drag-container .drag-container__bar {
-  width: 100%;
-  height: 8px;
-  background-color: #a5f3eb;
-}
-
-.main-container .card-container .drag-container .drag-container__circle {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  left: 168px;
-  top: 309px;
-  background: #10D8C4;
-  -webkit-box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
-          box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
-  background-image: url("../images/icon-slider.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.main-container .card-container .drag-container .drag-container__circle:hover {
+.main-container .card-container .drag-container .drag__bar {
+  -webkit-appearance: none;
+  width: 100%;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+  background-color: #A4F3EB;
+}
+
+.main-container .card-container .drag-container .drag__bar[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  background-color: #a4f3eb;
+  border-radius: 5px;
+  width: 279px;
+  height: 8px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.main-container .card-container .drag-container .drag__bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #a4f3eb;
+  -webkit-box-shadow: 0px 0px 11px 8px rgba(0, 0, 0, 0.26);
+          box-shadow: 0px 0px 11px 8px rgba(0, 0, 0, 0.26);
+  background: url("../images/icon-slider.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-container .card-container .drag-container .drag__bar:hover {
   cursor: -webkit-grab;
   cursor: grab;
 }

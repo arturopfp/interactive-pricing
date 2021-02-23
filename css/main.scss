@@ -88,38 +88,44 @@
 
             display: flex;
             align-items: center;
+            justify-content: center;
 
-            border: 1px solid red;
-
-            .drag-container__bar {
+            .drag__bar {
+                -webkit-appearance: none;
                 width: 100%;
+                border-radius: 5px;
+                background: #d3d3d3;
+                outline: none;
+                opacity: 0.7;
+                -webkit-transition: .2s;
+                transition: opacity .2s;
+
+                background-color: #A4F3EB;
+            }
+
+            .drag__bar[type=range]::-webkit-slider-runnable-track {
+                -webkit-appearance: none;
+                background-color: #a4f3eb;
+                border-radius: 5px;
+                width: 279px;
                 height: 8px;
-
-                background-color: $softCyan;
+                cursor: grab;
             }
 
-            .drag-container__circle {
-                width: 40px;
-                height: 40px;
-
+            .drag__bar::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 30px;
+                height: 30px;
                 border-radius: 50%;
-
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                position: absolute;
-                left: 168px;
-                top: 309px;
-
-                background: #10D8C4;
-                box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
-                background-image: url('../images/icon-slider.svg');
-                background-repeat: no-repeat;
+                background: #a4f3eb;
+                box-shadow:0px 0px 11px 8px rgba(0,0,0,0.26);
+                background: url('../images/icon-slider.svg');
                 background-position: center;
-            }
+                background-repeat: no-repeat;
+            } 
 
-            .drag-container__circle:hover {
+            .drag__bar:hover {
                 cursor: grab;
             }
 
